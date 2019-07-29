@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>ClubsApp</title>
+    <link rel="shortcut icon" href="J.ico" type = "image/x-icon">
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  </head>
+  <nav>
+      <ul style="list-style-type: none;">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="howtouse.html">How to Use</a></li>
+        <li><a href="record.html">Record Minutes</a></li>
+        <li><a href="view.html">View Minutes</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  <body>
+    <h1>ClubsApp</h1>
+    <p style=text-align:center><small>Helping students keep track of club attendance, meetings, interviews, and board positions.</small></p>
+    <form>
+      <fieldset>
+        <legend>Sign Up to Get Started!</legend>
+        <label for="1name">First Name:</label>
+        <input type="text" id="1name" name="user_name" 
+        placeholder="First Name" 
+        onfocus="this.placeholder = ''" 
+        onblur="this.placeholder='First Name'">
+
+        <label for="2name">Last Name:</label>
+        <input type="text" id="2name" name="user_name" 
+        placeholder="Last Name" 
+        onfocus="this.placeholder = ''" 
+        onblur="this.placeholder='Last Name'">
+        <label for="mail"> Email:
+          <input type="email" id="mail" name="user_email"
+          placeholder="johnapple@example.com"
+          onfocus="this.placeholder=''"
+          onblur="this.placeholder='johnapple@example.com'">
+        </label>
+        <br>
+        <label for="School">Current High School:
+          <select id="School" name="user_School">
+            <option value="placeholder"> </option>
+            <option value="irvine">Irvine High School</option>
+            <option value="northwood">Northwood High School</option>  
+            <option value="portola">Portola High School</option>
+            <option value="university">University High School</option>
+            <option value="woodbridge">Woodbridge High School</option>
+          </select>
+        </label>
+      </fieldset>
+    </form>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
+
+<!--Attributes-->
+<!--href: this attribute specifies as its
+value the web address that you want the link 
+to point to; where the browser navigates to when the link is clicked-->
+<!--title: extra info about the link. 
+This will appear as a tooltip when hovered over-->
+<!--target: specifies the browsing
+context which will be used to display the link
+target="blank" will display the link in a new tab-->
+<!-- using the disabled attribute prevents the end user from entering text into the input box -->
+<!--<input type="text" disabled>-->
+
+<!-- The user can enter text into the follow input, as it doesn't contain the disabled attribute -->
+<!---<input type="text">-->
+
+<!--SPECIAL CHARACTERS-->
+<!--&lt; = <, &gt; = >, &quot; = ", &apos; = ', &amp = &-->
